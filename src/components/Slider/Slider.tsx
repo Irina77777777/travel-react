@@ -3,8 +3,6 @@ import { Navigation, Pagination } from 'swiper'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-
-
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -12,16 +10,16 @@ import 'swiper/css/navigation'
 
 import './styles.css'
 
-// import required modules
-//import { Pagination, Navigation } from 'swiper'
-
-// Import Swiper styles
-//import 'swiper/css'
-// import 'swiper/scss'
-// import 'swiper/scss/navigation'
-// import 'swiper/scss/pagination'
-
 import sl11 from 'assets/sl11.jpg'
+import sl12 from 'assets/sl12.jpg'
+import sl13 from 'assets/sl13.jpg'
+import sl14 from 'assets/sl14.jpg'
+import sl15 from 'assets/sl15.jpg'
+import sl16 from 'assets/sl16.jpg'
+import sl17 from 'assets/sl17.jpg'
+import sl18 from 'assets/sl18.jpg'
+import sl19 from 'assets/sl19.jpg'
+//import sl11 from 'assets/sl11.jpg'
 
 type Props = {}
 const Slider = (props: Props) => {
@@ -34,15 +32,40 @@ const Slider = (props: Props) => {
             modules={[Pagination, Navigation]}
             className="mySwiper"
         >
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
+            <SwiperSlide>
+                <img src={sl11} alt="slide-1" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src={sl12} alt="slide-2" />
+            </SwiperSlide>
+            <SwiperSlide>
+                {' '}
+                <img src={sl13} alt="slide-3" />
+            </SwiperSlide>
+            <SwiperSlide>
+                {' '}
+                <img src={sl14} alt="slide-4" />
+            </SwiperSlide>
+            <SwiperSlide>
+                {' '}
+                <img src={sl15} alt="slide-5" />
+            </SwiperSlide>
+            <SwiperSlide>
+                {' '}
+                <img src={sl16} alt="slide-6" />
+            </SwiperSlide>
+            <SwiperSlide>
+                {' '}
+                <img src={sl17} alt="slide-7" />
+            </SwiperSlide>
+            <SwiperSlide>
+                {' '}
+                <img src={sl18} alt="slide-8" />
+            </SwiperSlide>
+            <SwiperSlide>
+                {' '}
+                <img src={sl19} alt="slide-9" />
+            </SwiperSlide>
         </Swiper>
     )
 }
