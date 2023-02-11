@@ -33,7 +33,7 @@ const Slider = (props: Props) => {
             className="mySwiper"
         >
             <SwiperSlide>
-                <img src={sl11} alt="slide-1" />
+                <img src={sl11} alt="slide-1"  />
             </SwiperSlide>
             <SwiperSlide>
                 <img src={sl12} alt="slide-2" />

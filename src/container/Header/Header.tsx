@@ -10,6 +10,9 @@ import { styled, alpha } from '@mui/material/styles'
 import InputBase from '@mui/material/InputBase'
 import SearchIcon from '@mui/icons-material/Search'
 import logo from 'assets/logo.png'
+import './Header.css'
+
+
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
@@ -60,7 +63,8 @@ type Props = {}
 const Header = (props: Props) => {
   return (
       <>
-          <AppBar position="static">
+          <AppBar position="static" className='appBa'
+           >
               <Container maxWidth="lg">
                   <Toolbar>
                       <IconButton
