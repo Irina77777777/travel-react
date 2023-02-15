@@ -10,7 +10,7 @@ const App = (props: Props) => {
         <StyledEngineProvider injectFirst>
             <CssBaseline />
             <Header />
-            <Home />
+            {/* <Home /> */}
             <Main />
         </StyledEngineProvider>
     )
