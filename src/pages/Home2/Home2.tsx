@@ -1,7 +1,14 @@
+import { Typography } from "@mui/material"
+import ArticlesList from "components/Articles/ArticlesList"
+
 type Props = {}
 const Home2 = (props: Props) => {
   return (
-    <div>Home2</div>
+    <>
+      <Typography>
+      </Typography>
+      <ArticlesList/>
+    </>
   )
 }
 export default Home2
