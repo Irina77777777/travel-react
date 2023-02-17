@@ -6,6 +6,7 @@ type ArticlesProps = {
     local: string
     man: string
     image: string
+    isLike?: boolean
 }
 
 const articlesArray: ArticlesProps[] = [
@@ -15,7 +16,8 @@ const articlesArray: ArticlesProps[] = [
         desc: "Stay focused and remember we design the best WordPress News and Magazine Themes. It’s the key to more success, why…",
         local: "Africa",
         man: " Alex Birzul   Jan 23, 2022 ",
-        image: "/images/afr1.jpg"
+        image: "/images/afr1.jpg",
+        isLike: true
     },
     {
          id:2,
@@ -23,7 +25,8 @@ const articlesArray: ArticlesProps[] = [
         desc: "Stay focused and remember we design the best WordPress News and Magazine Themes. It’s the key to more success, why…",
         local: "Asia",
         man: "Tanni Drobot   Feb 14, 2022 ",
-        image: "/images/asi1.jpg"
+        image: "/images/asi1.jpg",
+         isLike: true
     }, {
         id:3,
         title: "Why You Shouldn’t Ride Elephants In Thailand",

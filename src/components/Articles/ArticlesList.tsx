@@ -2,7 +2,12 @@ import { Grid } from "@mui/material"
 import articlesArray from "utils/articlesArray"
 import ArticlesListItem from "./ArticlesListItem"
 
-type Props = {}
+type Props = {
+    toogleLikeState: (id: number) => void
+    artLikeState: {
+        [id: number]: boolean
+    }
+}
 type ArticlesProps = {
     id: number
     title: string
@@ -11,7 +16,7 @@ type ArticlesProps = {
     man: string
     image: string
 }
-const ArticlesList = (props: Props) => {
+const ArticlesList = ({artLikeState, toogleLikeState}: Props) => {
   return (
       <>
           <Grid
@@ -23,13 +28,16 @@ const ArticlesList = (props: Props) => {
           >
               {articlesArray.map(
                   ({ id, title, desc, local, man, image }: ArticlesProps) => (
-                      <Grid item xs={12} sm={6} md={4} key= {id}> 
+                      <Grid item xs={12} sm={6} md={4} key={id}>
                           <ArticlesListItem
+                              id={id}
                               title={title}
                               desc={desc}
                               local={local}
                               man={man}
                               image={image}
+                              toogleLikeState={toogleLikeState}
+                              isLiked={artLikeState[id]}
                           />
                       </Grid>
                   )
