@@ -2,6 +2,7 @@ import { Card, CardActions, CardContent, Button } from "@mui/material"
 import './ArticlesListItem.scss'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import FavoriteIcon from '@mui/icons-material/Favorite'
+import { Link } from "react-router-dom"
 
 type Props = {
     id: number
@@ -32,14 +33,16 @@ const ArticlesListItem = ({
                 <div className="artic-img">
                     <img src={image} alt="" />
                 </div>
-                <div className="artic-title"> {title}</div>
+                <div className="artic-title">
+                    {' '}
+                    <Link to={`/articles/${id}`}> {title}</Link>
+                </div>
                 <p className="artic-desc">{desc}</p>
                 <div className="artic-local">
                     <span>Location:</span> {local}
                 </div>
                 <div className="artic-man">
                     {man}
-                    {/* Alex Birzul   Jan 23, 2022 */}
                 </div>
             </CardContent>
             <CardActions className="btn-wrap">

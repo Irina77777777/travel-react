@@ -1,4 +1,4 @@
-import { Button, Grid } from '@mui/material'
+import {  Grid } from '@mui/material'
 import ArticlesListItem from 'components/Articles/ArticlesListItem'
 import articlesArray from 'utils/articlesArray'
 
@@ -15,13 +15,6 @@ type ArticlesProps = {
     local: string
     man: string
     image: string
-
-    // toogleLikeState: (id: number) => void
-    // artLikeState: {
-    //     [id: number]: boolean
-    // }
-    isLike?: boolean
-    isLiked?: boolean
 }
 
 const Favorite =
