@@ -1,6 +1,7 @@
-import { Grid } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import ArticlesListItem from 'components/Articles/ArticlesListItem'
 import articlesArray from 'utils/articlesArray'
+
 
 
 type ArticlesProps = {
@@ -21,6 +22,16 @@ type Props = {
 const Africa = ({ artLikeState, toogleLikeState }: Props) => {
     return (
         <>
+            <Typography
+                variant="h4"
+                component={'h2'}
+                sx={{
+                    margin: '50px 0',
+                }}
+            >
+                {' '}
+                Africa{' '}
+            </Typography>
             <Grid
                 container
                 direction="row"

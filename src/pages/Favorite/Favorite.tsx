@@ -1,4 +1,4 @@
-import {  Grid } from '@mui/material'
+import {  Grid, Typography } from '@mui/material'
 import ArticlesListItem from 'components/Articles/ArticlesListItem'
 import articlesArray from 'utils/articlesArray'
 
@@ -25,6 +25,16 @@ const Favorite =
 ) => {
     return (
         <>
+            <Typography
+                variant="h4"
+                component={'h2'}
+                sx={{
+                    margin: '50px 0',
+                }}
+            >
+                {' '}
+                Favorite{' '}
+            </Typography>
             <Grid
                 container
                 direction="row"
@@ -33,8 +43,8 @@ const Favorite =
                 spacing={4}
             >
                 {articlesArray
-                    .filter((item) =>
-                                artLikeState[item.id] === true).map(
+                    .filter((item) => artLikeState[item.id] === true)
+                    .map(
                         ({
                             id,
                             title,

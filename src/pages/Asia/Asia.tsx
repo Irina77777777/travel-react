@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import ArticlesListItem from 'components/Articles/ArticlesListItem'
 import articlesArray from 'utils/articlesArray'
 
@@ -21,6 +21,16 @@ type Props = {
 const Asia = ({ artLikeState, toogleLikeState }: Props) => {
     return (
         <>
+            <Typography
+                variant="h4"
+                component={'h2'}
+                sx={{
+                    margin: '50px 0',
+                }}
+            >
+                {' '}
+                Asia{' '}
+            </Typography>
             <Grid
                 container
                 direction="row"

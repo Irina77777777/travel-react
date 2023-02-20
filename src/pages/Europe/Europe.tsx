@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import ArticlesListItem from 'components/Articles/ArticlesListItem'
 import articlesArray from 'utils/articlesArray'
 
@@ -19,13 +19,23 @@ type Props = {
 const Europe = ({ artLikeState, toogleLikeState }: Props) => {
     return (
         <>
+            <Typography
+                variant="h4"
+                component={'h2'}
+                sx={{
+                    margin: '50px 0',
+                }}
+            >
+                {' '}
+                Europe{' '}
+            </Typography>
             <Grid
                 container
                 direction="row"
                 justifyContent="space-around"
                 alignItems="center"
                 spacing={4}
-            >  
+            >
                 {articlesArray
                     .filter(({ local }: ArticlesProps) => local === 'Europe')
                     .map(
