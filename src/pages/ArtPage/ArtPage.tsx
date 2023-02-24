@@ -1,5 +1,7 @@
 import { Button, Typography } from '@mui/material'
 import Rewievs from 'components/Reviews/Rewievs'
+import BasicV from './BasicV'
+
 
 type Props = {}
 const ArtPage = (props: Props) => {
@@ -16,6 +18,12 @@ const ArtPage = (props: Props) => {
               {' '}
               Page1 {' '}
           </Typography>
+
+<BasicV/>
+
+
+
+
           <Button> Art Page 1</Button>
           <div>
               {' '}
