@@ -2,8 +2,6 @@ import { Typography } from '@mui/material'
 import Rewievs from 'components/Reviews/Rewievs'
 import Card from '@mui/joy/Card'
 import CardCover from '@mui/joy/CardCover'
-
-
 //@ts-ignore
 import vid from 'assets/video11.mp4'
 

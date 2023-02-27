@@ -3,6 +3,7 @@ import About from "pages/About/About"
 import Africa from "pages/Africa/Africa"
 import ArtPage from "pages/ArtPage/ArtPage"
 import ArtPage2 from "pages/ArtPage/ArtPage2"
+import ArtPage3 from "pages/ArtPage/ArtPage3"
 import Asia from "pages/Asia/Asia"
 import Europe from "pages/Europe/Europe"
 import Favorite from "pages/Favorite/Favorite"
@@ -72,7 +73,8 @@ const Main = ({artLikeState, toogleLikeState}: Props) => {
                     }
                 />
                 <Route path="articles/:id" element={<ArtPage />} />
-                <Route path="articles/2" element={<ArtPage2/>} />
+                <Route path="articles/2" element={<ArtPage2 />} />
+                <Route path="articles/3" element={<ArtPage3 />} />
             </Routes>
         </Container>
     )
