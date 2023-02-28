@@ -13,15 +13,14 @@ const ArtPage2 = (props: Props) => {
             <Typography
                 variant="h4"
                 component={'h2'}
+                fontWeight="bold"
                 sx={{
                     margin: '50px 0',
                 }}
             >
                 {' '}
-                ArtPage2{' '}
+                Africa{' '}
             </Typography>
-         
-            <div> 11111</div>
             <Card sx={{ minWidth: 1200, minHeight: 700 }}>
                 <CardCover>
                     <video

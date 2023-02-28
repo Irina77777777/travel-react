@@ -11,25 +11,17 @@ const ArtPage = (props: Props) => {
           <Typography
               variant="h4"
               component={'h2'}
+              fontWeight='bold'
               sx={{
                   margin: '50px 0',
               }}
           >
               {' '}
-              Page1 {' '}
+              Asia {' '}
           </Typography>
 
 <BasicV/>
 
-
-
-
-          <Button> Art Page 1</Button>
-          <div>
-              {' '}
-              1111111 222222
-              <div>lijhukjlkmkl</div>
-      </div>
       <Rewievs/>
       </div>
   )
