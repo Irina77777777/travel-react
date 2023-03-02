@@ -8,6 +8,7 @@ import Typography from '@mui/joy/Typography'
 //@ts-ignore
 import vid from 'assets/video22.mp4'
 import Rewievs from 'components/Reviews/Rewievs'
+import sl21 from 'assets/sky.jpg'
 
 
 
@@ -91,6 +92,14 @@ const ArtPage3 = () => {
                     should never complain, complaining is a weak emotion, you
                     got life, we breathing, we blessed.
                 </p>
+                <Card
+                    component="li"
+                    sx={{ minWidth: 500, minHeight: 600, flexGrow: 1 }}
+                >
+                    <CardCover>
+                        <img src={sl21} alt="" />
+                    </CardCover>
+                </Card>
                 <p>
                     They never said winning was easy. Some people can’t handle
                     success, I can. You see the hedges, how I got it shaped up?

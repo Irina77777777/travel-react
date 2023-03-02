@@ -7,7 +7,6 @@ type Props = {}
 const ArtPage = (props: Props) => {
   return (
       <div>
-          ArtPage
           <Typography
               variant="h4"
               component={'h2'}

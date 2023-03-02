@@ -72,9 +72,11 @@ const Main = ({artLikeState, toogleLikeState}: Props) => {
                         />
                     }
                 />
-                <Route path="articles/:id" element={<ArtPage />} />
-                <Route path="articles/2" element={<ArtPage2 />} />
-                <Route path="articles/3" element={<ArtPage3 />} />
+                <Route path="articles/:id" element={<ArtPage2 />} />
+                <Route path="articles/2" element={<ArtPage />} />
+                <Route path="articles/3" element={<ArtPage />} />
+                <Route path="articles/5" element={<ArtPage3 />} />
+                <Route path="articles/6" element={<ArtPage3 />} />
             </Routes>
         </Container>
     )

@@ -4,8 +4,8 @@ import CardCover from '@mui/joy/CardCover'
 import CardContent from '@mui/joy/CardContent'
 import Typography from '@mui/joy/Typography'
 import sl20 from 'assets/sl20.jpg'
+import sl21 from "assets/sl21.jpg"
 
-//type Props = {}
 export default function BasicV() {
     return (
         <Box
@@ -149,17 +149,12 @@ export default function BasicV() {
                     sx={{ minWidth: 500, minHeight: 600, flexGrow: 1 }}
                 >
                     <CardCover>
-                        <img
-                            src="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800"
-                            srcSet="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800&dpr=2 2x"
-                            loading="lazy"
-                            alt=""
-                        />
+                        <img src={sl21} alt="" />
                     </CardCover>
                 </Card>
                 <Card component="li" sx={{ minWidth: 500, flexGrow: 1 }}>
                     <CardCover>
-                        /<h4>Action is the foundational key to all success</h4>
+                        .<h4>Action is the foundational key to all success</h4>
                         <p>
                             In life there will be road blocks but we will over
                             come it. Another one. Learning is cool, but knowing

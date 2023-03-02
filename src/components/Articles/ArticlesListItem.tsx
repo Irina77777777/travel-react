@@ -41,12 +41,12 @@ const ArticlesListItem = ({
                 <div className="artic-local">
                     <span>Location:</span> {local}
                 </div>
-                <div className="artic-man">
-                    {man}
-                </div>
+                <div className="artic-man">{man}</div>
             </CardContent>
             <CardActions className="btn-wrap">
-                <Button variant="outlined"> See more</Button>
+                <Button variant="outlined">
+                    <Link to={`/articles/${id}`}> See more</Link>
+                </Button>
             </CardActions>
         </Card>
     )
