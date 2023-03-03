@@ -1,4 +1,5 @@
 import { Typography } from '@mui/material'
+import Footer from 'container/Footer/Footer'
 
 type Props = {}
 const About = (props: Props) => {
@@ -14,6 +15,7 @@ const About = (props: Props) => {
               {' '}
               About{' '}
           </Typography>
+          <Footer/>
           
       </div>
   )
