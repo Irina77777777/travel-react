@@ -3,6 +3,7 @@ import Header from 'container/Header/Header'
 import { StyledEngineProvider } from '@mui/material/styles'
 import Main from 'container/Main/Main'
 import { useState } from 'react'
+import Footer from 'container/Footer/Footer'
 
 type Props = {}
 type ArtLikeState = {
@@ -29,6 +30,7 @@ const App = (props: Props) => {
                 artLikeState={artLikeState}
                 toogleLikeState={toogleLikeState}
             />
+            <Footer/>
         </StyledEngineProvider>
     )
 }

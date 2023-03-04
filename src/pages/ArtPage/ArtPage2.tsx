@@ -11,9 +11,11 @@ import sl21 from 'assets/sk33.JPG'
 
 //@ts-ignore
 import vid from 'assets/video11.mp4'
+import { useEffect } from 'react'
 
 type Props = {}
-const ArtPage2 = (props: Props) => {
+const ArtPage2 = (props: Props) => {  
+     useEffect(() => window.scrollTo(0, 100), [])
     return (
         <div>
             <Typography

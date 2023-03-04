@@ -31,7 +31,11 @@ const ArticlesListItem = ({
                     {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
                 </Button>
                 <div className="artic-img">
-                    <img src={image} alt="" />
+                    {/* <img src={image} alt="" /> */}
+                    <Link to={`/articles/${id}`}>
+                        {' '}
+                        <img src={image} alt="" />
+                    </Link>
                 </div>
                 <div className="artic-title">
                     {' '}

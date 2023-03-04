@@ -15,9 +15,10 @@ const Footer = (props: Props) => {
                   <div className="tags"> Europe</div>
                   <div className="tags"> Video</div>
                   <div className="tags"> Germany</div>
+                  <div className="tags"> Tenerife</div>
               </div>
           </div>
-          <div className='dest'>
+          <div className="dest">
               <h4> DESTINATIONS</h4>
               <ul>
                   <li> Asia </li>

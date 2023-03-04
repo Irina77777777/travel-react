@@ -9,12 +9,13 @@ import Typography from '@mui/joy/Typography'
 import vid from 'assets/video22.mp4'
 import Rewievs from 'components/Reviews/Rewievs'
 import sl21 from 'assets/sky.jpg'
-
+import { useEffect } from 'react'
 
 
 
 
 const ArtPage3 = () => {
+     useEffect(() => window.scrollTo(0, 110), [])
     return (
         <>
             <Typography
@@ -205,7 +206,7 @@ const ArtPage3 = () => {
                             // "https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800"
                             // srcSet="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800&dpr=2 2x"
                             // loading="lazy"
-                            // alt=""
+                             alt=""
                         />
                     </CardCover>
                     <CardContent>

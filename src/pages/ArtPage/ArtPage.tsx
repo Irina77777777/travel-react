@@ -1,10 +1,12 @@
-import { Button, Typography } from '@mui/material'
+import { Typography } from '@mui/material'
 import Rewievs from 'components/Reviews/Rewievs'
+import { useEffect } from 'react'
 import BasicV from './BasicV'
 
 
 type Props = {}
 const ArtPage = (props: Props) => {
+    useEffect(() => window.scrollTo(0, 100), [])
   return (
       <div>
           <Typography
