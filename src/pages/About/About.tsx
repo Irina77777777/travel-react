@@ -3,7 +3,6 @@ import Card from '@mui/joy/Card'
 import CardCover from '@mui/joy/CardCover'
 import CardContent from '@mui/joy/CardContent'
 import Typography from '@mui/joy/Typography'
-import Footer from 'container/Footer/Footer'
 import { useEffect } from 'react'
 
 type Props = {}
@@ -42,8 +41,6 @@ const About = (props: Props) => {
                   </Typography>
               </CardContent>
           </Card>
-
-          <Footer />
       </div>
   )
 }
